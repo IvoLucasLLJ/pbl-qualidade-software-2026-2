@@ -1,0 +1,23 @@
+proot warning: can't sanitize binding "/proc/self/fd/1": No such file or directory
+proot warning: can't sanitize binding "/proc/self/fd/2": No such file or directory
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /root/aula12-venv/bin/python
+cachedir: .pytest_cache
+rootdir: /sdcard/Documents/Qualidade de Software/Aula 12
+plugins: playwright-0.10.0
+collecting ... collected 2 items
+
+../sdcard/Documents/Qualidade de Software/Aula 12/test_tarefas.py::test_fluxo_tarefas[chromium] PASSED [ 50%]
+../sdcard/Documents/Qualidade de Software/Aula 12/test_tarefas_pom.py::test_fluxo_tarefas_pom[chromium] PASSED [100%]
+
+=============================== warnings summary ===============================
+test_tarefas.py::test_fluxo_tarefas[chromium]
+  /root/aula12-venv/lib/python3.12/site-packages/_pytest/fixtures.py:1392: PytestRemovedIn10Warning: Session-scoped fixtures defined as instance methods are deprecated.
+  Instance attributes set in the 'base_url' fixture will NOT be visible to test methods,
+  as each test gets a new instance while the fixture runs only once per class.
+  Use a @classmethod decorator below @pytest.fixture and set attributes on cls instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#class-scoped-fixture-as-instance-method
+    fixturefunc = resolve_fixture_function(fixturedef, request)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 2 passed, 1 warning in 11.34s =========================

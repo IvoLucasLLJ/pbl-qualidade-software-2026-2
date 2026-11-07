@@ -142,12 +142,13 @@ A função avalia o sinal antes de comparar com o mínimo. Assim, distingue a en
 
 ## 8. Uso de inteligência artificial
 
-- ChatGPT foi utilizado no planejamento, para organizar o escopo e discutir a regra e os testes.
-- Codex com GPT-6 Astra, raciocínio Extra alto, foi utilizado na execução assistida, incluindo inspeção local, organização da pasta, implementação progressiva, exploração com Playwright, execução dos testes e preparação da documentação.
-- A sugestão anterior de implementar apenas `return valor_pedido >= 30` foi corrigida ao completar a regra. Essa expressão devolvia `False` para `-1` e precisava gerar `ValueError`. TU03 registrou a falha real, e a validação de negativos foi acrescentada antes da comparação.
-- O código foi verificado pelas cinco execuções unitárias registradas, pela execução conjunta dos quatro testes, pela inspeção dos elementos reais da interface e pela conferência dos identificadores entre código, tabela e relatórios. As versões instaladas e a consistência das dependências também foram conferidas.
+Utilizei o ChatGPT para interpretar o enunciado, organizar o trabalho e receber orientações, comandos e trechos de código. Iniciei a implementação no VS Code e executei os primeiros testes pelo terminal.
 
-Esta entrega foi preparada para revisão de Ivo Lucas de Lima Júnior antes do envio ao GitHub. A explicação individual acima é material para essa revisão e para a demonstração de compreensão do código.
+Na continuidade, utilizei o Codex para auxiliar na implementação, executar os testes e organizar a documentação. O desenvolvimento foi acompanhado pelas saídas do pytest e pela análise dos erros encontrados.
+
+Uma sugestão adaptada foi a escolha do teste funcional. Inicialmente, planejamos testar a pesquisa de restaurantes. Como o acesso à listagem exigiu autenticação, escolhemos verificar a abertura do formulário de cadastro, com duas assertions de visibilidade.
+
+A verificação do código incluiu as execuções registradas durante o TDD, a execução conjunta dos quatro testes e a conferência entre código, documentação e relatórios.
 
 ## 9. Diferenciais implementados
 

@@ -1,0 +1,73 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /home/lucas/pbl-qualidade-software-2026-2/.venv/bin/python
+rootdir: /home/lucas/pbl-qualidade-software-2026-2/atividades/atividade-04
+plugins: playwright-0.10.0
+collecting ... collected 0 items / 1 error
+
+==================================== ERRORS ====================================
+_______________ ERROR collecting tests/test_regras_localeats.py ________________
+ImportError while importing test module '/home/lucas/pbl-qualidade-software-2026-2/atividades/atividade-04/tests/test_regras_localeats.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_regras_localeats.py:1: in <module>
+    from src.regras_localeats import pedido_atingiu_valor_minimo
+E   ImportError: cannot import name 'pedido_atingiu_valor_minimo' from 'src.regras_localeats' (/home/lucas/pbl-qualidade-software-2026-2/atividades/atividade-04/src/regras_localeats.py)
+=========================== short test summary info ============================
+ERROR tests/test_regras_localeats.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 0.13s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /home/lucas/pbl-qualidade-software-2026-2/.venv/bin/python
+rootdir: /home/lucas/pbl-qualidade-software-2026-2/atividades/atividade-04
+plugins: playwright-0.10.0
+collecting ... collected 1 item
+
+tests/test_regras_localeats.py::test_tu01_pedido_no_valor_minimo PASSED  [100%]
+
+============================== 1 passed in 0.02s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /home/lucas/pbl-qualidade-software-2026-2/.venv/bin/python
+rootdir: /home/lucas/pbl-qualidade-software-2026-2/atividades/atividade-04
+plugins: playwright-0.10.0
+collecting ... collected 2 items
+
+tests/test_regras_localeats.py::test_tu01_pedido_no_valor_minimo PASSED  [ 50%]
+tests/test_regras_localeats.py::test_tu02_pedido_abaixo_do_valor_minimo PASSED [100%]
+
+============================== 2 passed in 0.02s ===============================
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /home/lucas/pbl-qualidade-software-2026-2/.venv/bin/python
+rootdir: /home/lucas/pbl-qualidade-software-2026-2/atividades/atividade-04
+plugins: playwright-0.10.0
+collecting ... collected 3 items
+
+tests/test_regras_localeats.py::test_tu01_pedido_no_valor_minimo PASSED  [ 33%]
+tests/test_regras_localeats.py::test_tu02_pedido_abaixo_do_valor_minimo PASSED [ 66%]
+tests/test_regras_localeats.py::test_tu03_pedido_com_valor_negativo FAILED [100%]
+
+=================================== FAILURES ===================================
+_____________________ test_tu03_pedido_com_valor_negativo ______________________
+
+    def test_tu03_pedido_com_valor_negativo():
+>       with pytest.raises(ValueError):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+tests/test_regras_localeats.py:22: Failed
+=========================== short test summary info ============================
+FAILED tests/test_regras_localeats.py::test_tu03_pedido_com_valor_negativo - ...
+========================= 1 failed, 2 passed in 0.04s ==========================
+============================= test session starts ==============================
+platform linux -- Python 3.14.4, pytest-9.2.0, pluggy-1.7.0 -- /home/lucas/pbl-qualidade-software-2026-2/.venv/bin/python
+rootdir: /home/lucas/pbl-qualidade-software-2026-2/atividades/atividade-04
+plugins: playwright-0.10.0
+collecting ... collected 3 items
+
+tests/test_regras_localeats.py::test_tu01_pedido_no_valor_minimo PASSED  [ 33%]
+tests/test_regras_localeats.py::test_tu02_pedido_abaixo_do_valor_minimo PASSED [ 66%]
+tests/test_regras_localeats.py::test_tu03_pedido_com_valor_negativo PASSED [100%]
+
+============================== 3 passed in 0.03s ===============================
